@@ -1,11 +1,4 @@
-import pytest
-
 from rentomatic.use_cases import request_objects as ro
-
-
-def test_valid_request_object_cannot_be_used():
-    with pytest.raises(NotImplementedError):
-        ro.ValidRequestObject.from_dict({})
 
 
 def test_build_storageroom_list_request_object_without_parameters():

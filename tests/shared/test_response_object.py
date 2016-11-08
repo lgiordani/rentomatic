@@ -1,7 +1,6 @@
 import pytest
 
-from rentomatic.shared import response_object as res
-from rentomatic.use_cases import request_objects as req
+from rentomatic.shared import response_object as res, request_object as req
 
 
 @pytest.fixture
@@ -17,6 +16,11 @@ def response_type():
 @pytest.fixture
 def response_message():
     return 'This is a response error'
+
+
+def test_valid_request_object_cannot_be_used():
+    with pytest.raises(NotImplementedError):
+        req.ValidRequestObject.from_dict({})
 
 
 def test_response_success_is_true(response_value):
