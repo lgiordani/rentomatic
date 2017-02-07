@@ -9,10 +9,10 @@ class MemRepo:
             self._entries.extend(entries)
 
     def _check(self, element, key, value):
-        if '__' not in key:
-            key = key + '__eq'
-
-        key, operator = key.split('__')
+        if '__' in key:
+            key, operator = key.split('__')
+        else:
+            operator = 'eq'
 
         if operator not in ['eq', 'lt', 'gt']:
             raise ValueError('Operator {} is not supported'.format(operator))
