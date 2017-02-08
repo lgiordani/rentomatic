@@ -10,7 +10,7 @@ class MemRepo:
 
     def _check(self, element, key, value):
         if '__' in key:
-            key, operator = key.split('__')
+            key, operator = key.split('__', 1)
         else:
             operator = 'eq'
 
