@@ -67,3 +67,4 @@ venv*
 # Pytest and coverage
 .cache
 .coverage
+.pytest_cache/

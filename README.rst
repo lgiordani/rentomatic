@@ -1,40 +1,26 @@
-===============================
 Rent-o-matic
-===============================
+============
 
+A demo implementation of a clean architecture in Python.
 
-.. image:: https://img.shields.io/pypi/v/rentomatic.svg
-        :target: https://pypi.python.org/pypi/rentomatic
+The goal of the "Rent-o-matic" project (fans of Day of the Tentacle may
+get the reference) is to create a simple search engine on top of a
+dataset of objects which are described by some quantities. The search
+engine shall allow to set some filters to narrow the search.
 
-.. image:: https://img.shields.io/travis/lgiordani/rentomatic.svg
-        :target: https://travis-ci.org/lgiordani/rentomatic
+The objects in the dataset are storage rooms for rent described by the
+following quantities:
 
-.. image:: https://readthedocs.org/projects/rentomatic/badge/?version=latest
-        :target: https://rentomatic.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+-  An unique identifier
+-  A size in square meters
+-  A renting price in Euro/day
+-  Latitude and longitude
 
-.. image:: https://pyup.io/repos/github/lgiordani/rentomatic/shield.svg
-     :target: https://pyup.io/repos/github/lgiordani/rentomatic/
-     :alt: Updates
+The project is explained in detail and developed step-by-step in this
+post `Clean architectures in Python: a step-by-step
+example <http://blog.thedigitalcatonline.com/blog/2016/11/14/clean-architectures-in-python-a-step-by-step-example/>`__.
 
-
-A clean architecture demo project in Python
-
-
-* Free software: MIT license
-* Documentation: https://rentomatic.readthedocs.io.
-
-
-Features
---------
-
-* TODO
-
-Credits
----------
-
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
-
+This package was created with
+`Cookiecutter <https://github.com/audreyr/cookiecutter>`__ and my
+`Python project
+template <https://github.com/lgiordani/cookiecutter-pypackage>`__
