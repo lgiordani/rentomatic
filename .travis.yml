@@ -1,19 +1,16 @@
-# Config file for automatic testing at travis-ci.org
-# This file will be regenerated if you run travis_pypi_setup.py
-
 language: python
-python: 3.5
+dist: xenial
+python: "3.6"
 
 env:
-  - TOXENV=py35
+  - TOXENV=py27
   - TOXENV=py34
-  - TOXENV=py33
-  - TOXENV=pypy
+  - TOXENV=py35
+  - TOXENV=py36
+  - TOXENV=py37
 
-# command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
-install: pip install -U tox
+install:
+  - pip install -r requirements.txt
 
-# command to run tests, e.g. python setup.py test
-script: tox -e ${TOXENV}
-
-
+script:
+  - pytest
