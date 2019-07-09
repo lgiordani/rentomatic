@@ -12,7 +12,7 @@ The objects in the dataset are storage rooms for rent described by the following
 * Latitude and longitude
 
 The project is explained in detail and developed step-by-step in this post [Clean architectures in Python: a step-by-step example
-](http://blog.thedigitalcatonline.com/blog/2016/11/14/clean-architectures-in-python-a-step-by-step-example/).
+](https://www.thedigitalcatonline.com/blog/2016/11/14/clean-architectures-in-python-a-step-by-step-example/).
 
 
 This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and my [Python project template](https://github.com/lgiordani/cookiecutter-pypackage)

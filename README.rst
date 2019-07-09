@@ -18,7 +18,7 @@ following quantities:
 
 The project is explained in detail and developed step-by-step in this
 post `Clean architectures in Python: a step-by-step
-example <http://blog.thedigitalcatonline.com/blog/2016/11/14/clean-architectures-in-python-a-step-by-step-example/>`__.
+example <https://www.thedigitalcatonline.com/blog/2016/11/14/clean-architectures-in-python-a-step-by-step-example/>`__.
 
 This package was created with
 `Cookiecutter <https://github.com/audreyr/cookiecutter>`__ and my
